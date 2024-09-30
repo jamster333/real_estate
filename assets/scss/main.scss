@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "typography";
+
+.container {
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+html {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.search-input {
+  width: 240px;
+  height: 46px;
+  padding: 0 16px 0;
+  border: 1.5px solid #E9ECEF;
+  border-radius: 8px;
+  &:active {
+    border-color: #E9ECEF;
+  }
+}
+
+.search-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  text-align: left;
+}
