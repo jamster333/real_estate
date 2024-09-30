@@ -11,10 +11,10 @@
 
 <script lang="ts" setup>
 
-import { type IUser } from '@/types/user';
+import type { IUser } from '@/types/user';
 
 const props = defineProps<{
-  title: String,
+  title: string,
   user: IUser,
 }>();
 

@@ -7,14 +7,14 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
   },
   "dependencies": {
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",
     "vue": "latest",
-    "vue-router": "latest",
-    "lint": "eslint ."
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.5.7",

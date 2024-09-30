@@ -1,7 +1,7 @@
 <template>
   <div class="user" @click="userStore.selectUser(user.id)">
       <div class="user__logo">
-        <img src="/userLogo.png" alt="user-avatar" />
+        <img src="/userLogo.png" alt="user-avatar" >
       </div>
       <div class="user__content content">
         <div class="content__name">

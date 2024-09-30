@@ -4,10 +4,11 @@
       {{ title }}
     </div>
     <form action="#" class="search-form">
-      <input @input="onInput"
-             type="text"
+      <input
+type="text"
              class="search-input"
-             placeholder="Введите Id или имя">
+             placeholder="Введите Id или имя"
+             @input="onInput">
      </form>
   </div>
 </template>
@@ -18,7 +19,7 @@ import { debounce } from '~/utilites/helpers';
 import { useUserStore } from "~/store/userStore";
 
 defineProps<{
-  title: String,
+  title: string,
 }>();
 
 const userStore = useUserStore();
@@ -50,10 +51,10 @@ const onInput = debounce(async ($event: Event) => {
       notify({
         title: "Bad request",
         type: 'error',
-        text: "Error..!",
+        text: `${e?.message}`,
       });
   }
-}, 2000);
+}, 1000);
 
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="details-block">
-    <div class="tip text-secondary" v-if="!userStore.selectedUser">
+    <div v-if="!userStore.selectedUser" class="tip text-secondary">
       Выберите сотрудника, чтобы посмотреть его профиль
     </div>
     <div v-if="userStore.selectedUser">

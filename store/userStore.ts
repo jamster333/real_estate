@@ -23,6 +23,7 @@ export const useUserStore = defineStore({
     },
      setDefaultData() {
       this.users = null;
+      this.selectedUser = null;
      }
    },
 

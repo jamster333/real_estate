@@ -23,7 +23,7 @@ import { useUserStore } from "~/store/userStore";
 const userStore = useUserStore();
 
 defineProps<{
-  title: String,
+  title: string,
 }>()
 
 </script>
